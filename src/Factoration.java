@@ -1,3 +1,4 @@
+import models.Camion;
 import models.Chauffeur;
 import models.Client;
 import models.Comercial;

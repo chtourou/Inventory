@@ -1,3 +1,4 @@
+package models;
 
 public class Camion {
 
@@ -5,12 +6,14 @@ public class Camion {
     String marque;
     String matr;
     String volume;
+    Chauffeur chauffeur;
 
-    public Camion(  int id, String marque, String matr, String volume) {
+    public Camion(int id, String marque, String matr, String volume,Chauffeur chauffeur) {
         this.id = id;
-        this.marque=marque ;
-        this.matr =matr;
-        this.volume=volume ;
+        this.marque = marque;
+        this.matr = matr;
+        this.volume = volume;
+        this.chauffeur=chauffeur;
 
 
     }
@@ -47,6 +50,14 @@ public class Camion {
         this.volume = volume;
     }
 
+    public Chauffeur getChauffeur() {
+        return chauffeur;
+    }
+
+    public void setChauffeur(Chauffeur chauffeur) {
+        this.chauffeur = chauffeur;
+    }
+
     @Override
     public String toString() {
         return "Camion{" +
@@ -54,6 +65,7 @@ public class Camion {
                 ", marque='" + marque + '\'' +
                 ", matr='" + matr + '\'' +
                 ", volume='" + volume + '\'' +
+                ", chauffeur=" + chauffeur +
                 '}';
     }
 }
