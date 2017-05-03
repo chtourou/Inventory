@@ -1,5 +1,6 @@
 import handler.CamionHandler;
 import handler.ChauffeurHandler;
+import handler.ClientHandler;
 import handler.ComercialHandler;
 import models.Camion;
 import models.Chauffeur;
@@ -60,6 +61,14 @@ public class EntryPoint {
         Client client1 = new Client(40, "Ali", "Sousse");
         Client client2 = new Client(41, "Salah", "Monastir");
         ArrayList<Client> ListClient= new ArrayList<>();
+        ListClient.add(client1);
+        ListClient.add(client2);
+
+
+        ClientHandler clientHandler=new ClientHandler(ListClient);
+        resultat = clientHandler.getListClient();
+        System.out.println(resultat);
+
 
 
         //Commande
