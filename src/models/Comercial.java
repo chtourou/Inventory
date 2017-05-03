@@ -35,6 +35,7 @@ public class Comercial extends User{
     @Override
     public String toString() {
         return "Comercial{" +
+                super.toString() +
                 "Date_N='" + Date_N + '\'' +
                 ", salaire='" + salaire + '\'' +
                 '}';

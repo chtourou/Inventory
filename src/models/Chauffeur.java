@@ -2,7 +2,6 @@ package models;
 
 public class Chauffeur extends User {
 
-
     private String date_N;
     private String salaire;
 
@@ -31,7 +30,8 @@ public class Chauffeur extends User {
     @Override
     public String toString() {
         return "Chauffeur{" +
-                "date_N='" + date_N + '\'' +
+                super.toString() +
+                ", date_N='" + date_N + '\'' +
                 ", salaire='" + salaire + '\'' +
                 '}';
     }
